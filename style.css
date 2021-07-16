@@ -1777,7 +1777,7 @@ body{
     background: #DEDEDE;
     border: 0;
     outline: black;
-
+    padding: 5px;
 }
 #contact-left-inner-text2{
     width: 100%;
@@ -1786,7 +1786,7 @@ body{
     background: #DEDEDE;
     border: 0;
     outline: black;
-
+    padding: 5px;
 }
 #contact-left-inner-textarea{
     width: 100%;
@@ -1796,7 +1796,7 @@ body{
     background: #DEDEDE;
     border: 0;
     outline: black;
-
+    padding: 5px;
 }
 @media only screen and (max-width: 400px){
     #contact-right-inner h1{
@@ -1865,7 +1865,7 @@ body{
     background: #DEDEDE;
     border: 0;
     outline: black;
-    
+    padding: 5px;
 }
 @media only screen and (max-width: 1600px){
     #footer-right-input{
@@ -1875,6 +1875,14 @@ body{
 @media only screen and (min-width: 1800px){
     #footer-right-input{
         width: 50%;
+    }
+}
+@media only screen and (min-width: 2500px){
+    #footer-right-input{
+        margin-right: 30px;
+    }
+    #footer-left-inner-second p{
+        font-size: 18px;
     }
 }
 @media only screen and (max-width: 768px){
@@ -1949,17 +1957,19 @@ body{
     color: white;
     font-size: 18px;
     margin-top: 72px;
-    letter-spacing: 4px;
+    /* letter-spacing: 4px; */
 }
 .card1 p{
     color: white;
     text-align: center;
     font-size: 14px;
     margin-top: 50px;
-    font-family: 'Mortend - Light', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 .card1 a{
     background: red;
+    text-transform: uppercase;
     text-decoration: none;
     display: block; 
     text-align: center;
@@ -1970,6 +1980,10 @@ body{
     box-shadow: 5px 8px 10px 6px rgba(0, 0, 0, 0.8);
     border-radius: 22px;
     font-family: 'dharma', sans-serif;
+    transition: all 0.3s ease;
+}
+.card1 a:hover{
+    transform: translateY(-10px);
 }
 .card2{
     width: 451px;
@@ -1991,18 +2005,20 @@ body{
     color: white;
     font-size: 18px;
     margin-top: 72px;
-    letter-spacing: 4px;
+    /* letter-spacing: 4px; */
 }
 .card2 p{
     color: white;
     text-align: center;
     font-size: 14px;
     margin-top: 50px;
-    font-family: 'Mortend - Light', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 .card2 a{
     background: red;
     text-decoration: none;
+    text-transform: uppercase;
     display: block; 
     text-align: center;
     margin-top: 100px;
@@ -2012,6 +2028,10 @@ body{
     box-shadow: 5px 8px 10px 6px rgba(0, 0, 0, 0.8);
     border-radius: 22px;
     font-family: 'dharma', sans-serif;
+    transition: all 0.3s ease;
+}
+.card2 a:hover{
+    transform: translateY(-10px);
 }
 .card3{
     margin-top: 70px;
@@ -2033,20 +2053,22 @@ body{
     color: white;
     font-size: 18px;
     margin-top: 72px;
-    letter-spacing: 4px;
+    /* letter-spacing: 4px; */
 }
 .card3 p{
     color: white;
     text-align: center;
     font-size: 14px;
     margin-top: 50px;
-    font-family: 'Mortend - Light', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 .card3 a{
     background: red;
     text-decoration: none;
     display: block; 
     text-align: center;
+    text-transform: uppercase;
     margin-top: 50px;
     color: white;
     font-size: 12px;
@@ -2054,6 +2076,21 @@ body{
     box-shadow: 5px 8px 10px 6px rgba(0, 0, 0, 0.8);
     border-radius: 22px;
     font-family: 'dharma', sans-serif;
+    transition: all 0.3s ease;
+}
+.card3 a:hover{
+    transform: translateY(-10px);
+}
+@media only screen and (min-width: 2000px){
+    .card1 a{
+        font-size: 15px;
+    }
+    .card2 a{
+        font-size: 18px;
+    }
+    .card3 a{
+        font-size: 18px;
+    }
 }
 @media only screen and (min-width: 1200px){
     .card2{
@@ -2118,17 +2155,18 @@ body{
     font-family: 'dharma', sans-serif;
     margin-bottom: 20px;
 }
-.team-first-right .g-music-producer{
+.team-first-right .g-music-producer p{
     /* background: url('img/Rectangle\ 43.png'); */
     background: red;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 20px 10px;
+    padding: 25px 10px;
     border-radius: 10px;
     font-size: 15px;
     font-family: 'dharma', sans-serif;
     margin-bottom: 20px;
+    
 }
 .team-first-right .g-tag{
     /* border: 2px solid red; */
@@ -2371,14 +2409,16 @@ body{
 }
 .second-right-upper-2 p{
     letter-spacing: 8px;
-    margin-bottom: 30px;
     font-size: 18px;
     font-family: 'dharma', sans-serif;
+    /* border: 2px solid rgb(255, 208, 0); */
 }
 .second-right-upper-2-img{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
+    /* border: 2px solid red; */
 }
 @media only screen and (max-width: 400px){
     .second-right-upper-2 img{
@@ -2474,8 +2514,17 @@ body{
     }
 }
 @media only screen and (max-width: 580px){
+    .second-right-upper-1 p {
+        margin-top: 30px;}
+
     .team-g-second-right-lower-1 h1{
         font-size: 30px;
+    }
+    .team-g-second-right-lower-1 {
+        margin-top: 0px;
+    }
+    .team-g-second-right-lower-2 {
+        margin-top: 5px;
     }
     .team-g-second-right-lower-2 h1{
         font-size: 30px;
@@ -2491,6 +2540,10 @@ body{
     }
     .team-g-second-right-lower-2 p{
         margin-bottom: 20px;
+    }
+    .team-second .team-second-left {
+        margin-top: 30px;
+        display: block;
     }
 }
 /* GRAVERO */
@@ -2552,13 +2605,13 @@ body{
     font-family: 'dharma', sans-serif;
     margin-bottom: 20px;
 }
-.team-abhi-first-right .abhi-music-producer{
+.team-abhi-first-right .abhi-music-producer p{
     /* background: url('img/Rectangle\ 43.png'); */
     background: red;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 20px 34px;
+    padding: 25px 34px;
     border-radius: 10px;
     font-size: 15px;
     font-family: 'dharma', sans-serif;
@@ -2575,6 +2628,7 @@ body{
     font-family: 'Mortend - Light', sans-serif;
     /* border: 2px solid red; */
 }
+
 @media only screen and (max-width: 1170px){
     .team-abhi-first-left .team-abhi-first-h1 h1{
         font-size: 56px;
@@ -2727,6 +2781,9 @@ body{
     }
 }
 @media only screen and (max-width: 480px){
+    .team-abhi-second .team-abhi-second-left{
+        display: inline-block;
+    }
     .team-abhi-second .team-abhi-second-left-inner1{
         display: flex;
         flex-direction: column;
@@ -2831,6 +2888,11 @@ body{
     color: red;
 }
 @media only screen and (max-width: 580px){
+    .team-abhi-second-right-upper #team-abhi-second-right-upper-img-1{
+        width: 70%;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
     .team-abhi-second-right-lower-1 h1{
         font-size: 30px;
     }
@@ -2912,13 +2974,13 @@ body{
     font-family: 'dharma', sans-serif;
     margin-bottom: 20px;
 }
-.team-routh-first-right .routh-music-producer{
+.team-routh-first-right .routh-music-producer p{
     /* background: url('img/Rectangle\ 43.png'); */
     background: red;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 20px 34px;
+    padding: 25px 34px;
     border-radius: 10px;
     font-size: 15px;
     font-family: 'dharma', sans-serif;
@@ -3136,6 +3198,9 @@ body{
     .team-routh-second .team-routh-second-left-inner3 p{
         font-size: 10px;
     }
+    .team-routh-second .team-routh-second-left{
+        display: inline-block;
+    }
 }
 
 .team-routh-second-right-upper{
@@ -3144,9 +3209,10 @@ body{
     flex-wrap: wrap;
     /* border: 2px solid red; */
     margin-top: 1%;
+    align-items: center;
 }
-.team-routh-second-right-upper .team-routh-second-right-upper-img-1{
-    width: 50%;
+.team-routh-second-right-upper #team-routh-second-right-upper-img-1{
+    width: 20%;
 }
 .team-routh-second-right-lower{
     display: flex;
@@ -3195,7 +3261,34 @@ body{
     margin-top: 10px;
     color: red;
 }
+@media only screen and (max-width: 1850){
+    .team-routh-second-right-upper #team-routh-second-right-upper-img-1 img{
+        width: 25%;
+    height: 30%;
+    margin-top: 30px;
+    }
+}
 @media only screen and (max-width: 580px){
+    .team-routh-second-right-upper .team-routh-second-right-upper-img-1 img{
+        margin-left: 20px;
+        margin-top: 10px;
+        width: 70%;
+    }
+    .team-routh-second-right-upper .team-routh-second-right-upper-img-2 img{
+        margin-left: 20px;
+        width: 70%;
+        margin-top: -20px;
+    }
+    .team-routh-second-right-upper .team-routh-second-right-upper-img-3 img{
+        margin-left: 20px;
+        margin-top: -80px;
+        width: 70%;
+    }
+    .team-routh-second-right-upper .team-routh-second-right-upper-img-4 img{
+        margin-left: 20px;
+        margin-top: -80px;
+        width: 70%;
+    }
     .team-routh-second-right-lower-1 h1{
         font-size: 30px;
     }
@@ -3209,11 +3302,17 @@ body{
         font-size: 14px;
     }
     .team-routh-second-right-lower-1 p{
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
     .team-routh-second-right-lower-2 p{
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
+    .team-routh-second-right-lower-1 {
+        margin-top: -20px;}
+    .team-routh-second-right-lower-2 {
+        margin-top: 0px;
+        }
+
 }
 
 .kira-mid-text .kira-mid-text-inner{
